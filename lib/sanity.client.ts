@@ -45,6 +45,8 @@ export function getClient(preview?: { token: string }): SanityClient {
 export const getSanityImageConfig = () => getClient()
 
 export async function getSettings(client: SanityClient): Promise<Settings> {
+  const test = await client.fetch(settingsQuery)
+  // console.log('nate*****', test)
   return (await client.fetch(settingsQuery)) || {}
 }
 

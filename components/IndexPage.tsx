@@ -40,9 +40,7 @@ export default function IndexPage(props: IndexPageProps) {
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        <Suspense>
-          <IntroTemplate />
-        </Suspense>
+        <Suspense>{/* <IntroTemplate /> */}</Suspense>
       </Layout>
     </>
   )
