@@ -2,7 +2,7 @@
 /**
  * This config is used to set up Sanity Studio that's mounted on the `/pages/studio/[[...index]].tsx` route
  */
-
+import { table } from '@sanity/table'
 import { visionTool } from '@sanity/vision'
 import {
   apiVersion,
@@ -47,6 +47,7 @@ export default defineConfig({
         },
       },
     }),
+    table(),
     // Configures the global "new document" button, and document actions, to suit the Settings document singleton
     settingsPlugin({ type: settingsType.name }),
     // Add an image asset source for Unsplash
