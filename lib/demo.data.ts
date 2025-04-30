@@ -11,7 +11,7 @@ export const description = [
         _key: '4a58edd077880',
         _type: 'span',
         marks: [],
-        text: 'A statically generated blog example using ',
+        text: 'A statically generated blog example using  ',
       },
       {
         _key: '4a58edd077881',
